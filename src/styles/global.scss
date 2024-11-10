@@ -99,6 +99,56 @@ h2 {
       color: $color-primary-white;
     }
   }
+
+  %info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include desktop {
+      flex-direction: row;
+      padding: 0 100px;
+    }
+  }
+
+  %info-section-body {
+    h2 {
+      margin-bottom: 16px;
+    }
+
+    p {
+      max-width: 560px;
+      word-break: keep-all;
+    }
+
+    p:not(:first-of-type) {
+      margin-top: 26px;
+    }
+  }
+
+  .what-it-is-section {
+    @extend %info-section;
+
+    &__body {
+      margin-top: 47px;
+
+      @extend %info-section-body;
+    }
+
+    margin-bottom: 64px;
+  }
+
+  .how-it-works-section {
+    @extend %info-section;
+
+    &__body {
+      @extend %info-section-body;
+    }
+
+    @include desktop {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 
