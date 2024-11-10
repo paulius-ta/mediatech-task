@@ -14,10 +14,12 @@ const PasswordGenerator = () => {
     <div className={'password-generator'}>
       <div className={'password-generator__input'}>
         <input className={'input-password'} type="text" value={password} readOnly />
-        <button className={'btn-generate'}>
-          <img src="src/assets/icons/ic_refresh-arrow.svg" alt="Generate" />
-        </button>
-        <button className={'btn-copy-password'}>Copy Password</button>
+        <div className={'controls'}>
+          <button className={'btn-generate'}>
+            <img src="src/assets/icons/ic_refresh-arrow.svg" alt="Generate" />
+          </button>
+          <button className={'btn-copy-password'}>Copy Password</button>
+        </div>
       </div>
 
       <div className={'password-generator__options'}>
