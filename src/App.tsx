@@ -4,7 +4,12 @@ import PasswordGenerator from 'components/PasswordGenerator/PasswordGenerator.ts
 function App() {
   return (
     <>
-      <header className={'header'}></header>
+      <header className={'header'}>
+        <div className={'header__content'}>
+          <img src={'src/assets/icons/ic_cb-logo.svg'} className={'logo'} alt="Logo" />
+        </div>
+      </header>
+
       <main className={'page-content'}>
         <p className={'disclaimer'}>
           Our readers help us create quality content. If you purchase via links on our site, we may

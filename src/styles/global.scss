@@ -55,6 +55,12 @@ h2 {
     margin: 0 auto;
     max-width: $max-width;
     width: 100%;
+
+    .logo {
+      height: 30px;
+      width: auto;
+      margin: 0 11px;
+    }
   }
 }
 
