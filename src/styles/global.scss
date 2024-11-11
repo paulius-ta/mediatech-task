@@ -8,7 +8,7 @@
 
 html {
   font-family: Roboto, sans-serif;
-  font-size: 16px;
+  font-size: $font-size-m;
   line-height: 1.625;
   font-weight: 400;
 }
@@ -109,10 +109,10 @@ h2 {
     width: 100%;
     background-color: $background-primary-black;
     color: $color-primary-white;
-    padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    padding: 24px;
     margin-bottom: 72px;
 
     @include desktop {
