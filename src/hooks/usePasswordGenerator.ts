@@ -29,11 +29,17 @@ export const usePasswordGenerator = () => {
     if (opts.uppercase) chars += CHARS.uppercase;
     if (opts.specialSymbols) chars += CHARS.specialSymbols;
     if (opts.numbers) chars += CHARS.numbers;
-    return chars || CHARS.lowercase;
+    return chars;
   };
 
   const generatePassword = () => {
-    const availableChars = getAvailableChars(options);
+    let availableChars = getAvailableChars(options);
+
+    if (!availableChars) {
+      availableChars = CHARS.lowercase;
+      options.lowercase = true;
+    }
+
     let newPassword = '';
     for (let i = 0; i < PASSWORD_LENGTH; i++) {
       const randomIndex = Math.floor(Math.random() * availableChars.length);
