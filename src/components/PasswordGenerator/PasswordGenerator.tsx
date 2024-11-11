@@ -11,7 +11,7 @@ const PasswordGenerator = () => {
         <input className={'input-password'} type="text" value={password} readOnly />
         <div className={'controls'}>
           <button className={'btn-generate'} onClick={generatePassword}>
-            <img src="src/assets/icons/ic_refresh-arrow.svg" alt="Generate" />
+            <img src={'public/icons/ic_refresh-arrow.svg'} alt="Generate" />
           </button>
           <button className={'btn-copy-password'} onClick={copyPassword}>
             Copy Password

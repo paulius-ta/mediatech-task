@@ -6,7 +6,7 @@ function App() {
     <>
       <header className={'header'}>
         <div className={'header__content'}>
-          <img src={'src/assets/icons/ic_cb-logo.svg'} className={'logo'} alt="Logo" />
+          <img src={'public/icons/ic_cb-logo.svg'} className={'logo'} alt="Logo" />
         </div>
       </header>
 
@@ -28,7 +28,7 @@ function App() {
 
           <section className={'what-it-is-section'}>
             <figure className={'what-it-is-section__figure'}>
-              <img src="src/assets/icons/ic_password-generator.svg" alt="Password generator" />
+              <img src={'public/icons/ic_password-generator.svg'} alt="Password generator" />
             </figure>
             <div className={'what-it-is-section__body'}>
               <h2>What is a password generator?</h2>
@@ -52,7 +52,7 @@ function App() {
 
           <section className={'how-it-works-section'}>
             <figure className={'how-it-works-section__figure'}>
-              <img src="src/assets/icons/ic_password-strength.svg" alt="Password strength" />
+              <img src={'public/icons/ic_password-strength.svg'} alt="Password strength" />
             </figure>
             <div className={'how-it-works-section__body'}>
               <h2>How does our password generator tool work?</h2>
